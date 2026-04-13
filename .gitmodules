@@ -1,0 +1,6 @@
+[submodule "docs"]
+	path = docs
+	url = https://git@git.overleaf.com/6855c344fb63de797f7acb1b
+[submodule "src/sphericalDenseSupspensions"]
+	path = src/sphericalDenseSupspensions
+	url = git@github.com:EduardoCorona84/Spheroidal3D-collisions.git

@@ -1,0 +1,2 @@
+mkdir: cannot create directory ‘/home/niru8088/.MathWorks’: Not a directory
+slurmstepd: error: *** JOB 24468969 ON c3mem-a5-u36-2 CANCELLED AT 2026-03-11T18:52:09 DUE TO TIME LIMIT ***

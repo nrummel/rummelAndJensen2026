@@ -1,0 +1,34 @@
+mkdir: cannot create directory ‘/home/niru8088/.MathWorks’: Not a directory
+{Unrecognized function or variable 'MSJr_second'.
+
+Error in Get_Spectra_Vec>Spectra_nr2_local (line 125)
+    SL=real(bsxfun(@times,MSJr_second,MSJ_first));
+                          ^^^^^^^^^^^
+Error in Get_Spectra_Vec (line 14)
+    Spectra=Spectra_nr2_local(p,lambda,r,out);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in Sh_Mod_Kernel_Eval_off>LOCAL_shSyn_matrix (line 173)
+Fr=Get_Spectra_Vec(p,lambda,r',type,out);
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in Sh_Mod_Kernel_Eval_off (line 63)
+   Y = LOCAL_shSyn_matrix(p,d2,out,type,rho,u,v,Nr,Rdiag,lambda);
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in VSh_Mod_MatVec_RB2 (line 327)
+        Ynear=Sh_Mod_Kernel_Eval_off([p 1],pMat,0,out,rho,phi,th,Nrtrg,lambdar);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in RBS_MatVec (line 11)
+        Y = VSh_Mod_MatVec_RB2(V,L,params);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in RBS_Update_Operators (line 211)
+    Kernels.SLMODD = RBS_MatVec([],[],typeMV,Fparams.parmod,ldim,0,'SL_LMOD_3D',Kernels.SLD0);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in RBS_mobility>LOCAL_euler_step (line 422)
+   = RBS_Update_Operators(Xtp,Ctp,Mtp,nrmW,Kernels,Fparams,timings,it);
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in RBS_mobility (line 215)
+            LOCAL_euler_step(Xt{i},Xt{1},X2,Mt(i,:),Ct{i},Kernels,Nullsp,Fparams,colevent,collist,t,dt,i);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in Test_ModLap_Mobility_Amphi (line 245)
+RBS_mobility(fname,Fparams);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

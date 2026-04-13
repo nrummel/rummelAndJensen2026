@@ -1,0 +1,1611 @@
+==
+||
+|| Begin Execution slurm batch script.
+||
+==
+
+==
+SLURM PARAMS
+  This task's index is 2
+  This job array has 6 tasks
+  The array's Job ID is 24565366
+  The task's Job ID is 24565369
+  The combined array Job ID and Task ID is 24565366_2
+==
+
+==
+GLOBAL HYPER PARAMS
+  meanRadius   = 1
+  ep           = .3
+  p            = 8
+  Cdst         = 3.0
+  lcpTol       = 0.00000001
+  lcpMaxIter   = 100
+  lcpPLo       = 4
+  lcpTolLo     = 0.000001
+  Nt           = 200
+  dt           = .1
+==
+
+==
+THESE HYPER PARAMS
+  lcpSlvr=bifi
+  n=3
+  polyRatio=0.2
+  lcpWarmStart = 1
+==
+
+
+==
+RUN ALGO
+- LD_PRELOAD=/curc/sw/install/gcc/14.2.0/lib64/libgfortran.so.5 matlab -nodesktop -nodisplay -r "clear;clc; Test_ModLap_Mobility_Amphi(3,1,3.0,8,.3,0.2,'bifi',0.00000001,100,1, 4, 0.000001,200,.1); quit;"
+When executing MATLAB, you will receive the message 'mkdir: cannot create directory '/home/niru8088/.MathWorks': Not a directory'. Please ignore this statement as it is the result of CURC disabling harmful MATLAB functionality. Disabling this functionality should not impact users.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2025 The MathWorks, Inc.
+             R2025b Update 1 (25.2.0.3042426) 64-bit (glnxa64)
+                              October 3, 2025
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Setting CVX paths...done.
+[Warning: Directory already exists.] 
+[> In Test_ModLap_Mobility_Amphi (line 149)] 
+[Warning: Function cummin has the same name as a MATLAB built-in. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+In addpath (line 96)
+In Test_ModLap_Mobility_Amphi (line 155)] 
+[Warning: Function cummin has the same name as a MATLAB built-in. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+In addpath (line 96)
+In Test_ModLap_Mobility_Amphi (line 155)] 
+Initializing Configuration
+- Desired number of (potential) collisions 27
+- Tolerance on the desired number of collisions 2
+- Actual numbrer of (potential) Collision 28
+=======================================
+Important Hyper Parameters
+- n            = 3 
+- p            = 8 
+- gmresTol     = 1e-06 
+- denseMV      = 0 
+- polyRatio    = 0.2 
+- lcpSlvr      = bifi 
+- lcpWarmStart = 1 
+----------------------------------
+(Less) Important Hyper Parameters
+- meanRadius       = 1.000000 
+- Cdst             = 3.000000 
+- ep               = 0.300000 
+- lcpTol           = 0.000000 
+- lcpMaxIter       = 100.000000 
+- lcpPLo           = 4.000000 
+- lcpTolLo         = 0.000001 
+- Nt               = 200.000000 
+- dt               = 0.100000 
+- tdisc            = euler 
+- gamma            = 1.000000 
+- lambda           = 0.100000 
+- mdist            = 3.000000 
+- denseforce       = 1.000000 
+- saveLCPs         = 0.000000 
+- initMode         = lattice 
+- loadIntermediate = 1.000000 
+- plotFlag         = 0.000000 
+- seed             = 1.000000 
+=======================================
+* Reading the Legendre Transform matrix for p=8: Failed
+* Generating the Legendre Transform matrix for p=8
+* Stored generated LT matrices for p=8
+* Reading the differentiation matrices for p=8: Failed
+* Generating the differentiation matrices for p=8:
+* Direct differentiation via SHT for p=8 and (du,dv)=(1,0).
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=8 and (du,dv)=(0,1).
+* Reading the inverse Legendre Transform matrix for p=8: Failed
+* Generating the inverse Legendre Transform matrix for p=8
+* Stored generated ILT matrices for p=8
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=8 and (du,dv)=(2,0).
+* Direct differentiation Successful
+* Reading filtering matrix for p=8 to q=8: Failed
+* Generating the filtering matrix for p=8 to q=8.
+* Stored filter matrix for p=8
+
+ lid: 1 
+ Time for surface update: 4.396000e-03* Generating the direct double-layer matrix for p=8.
+* Generating the direct double-layer integration data for p=8.
+* Generating the direct rotation matrices for p=8, idx=0.
+* Generating the direct rotation matrices for p=8, idx=1.
+* Generating the direct rotation matrices for p=8, idx=2.
+* Generating the direct rotation matrices for p=8, idx=3.
+* Generating the direct rotation matrices for p=8, idx=4.
+* Generating the direct rotation matrices for p=8, idx=5.
+* Generating the direct rotation matrices for p=8, idx=6.
+* Generating the direct rotation matrices for p=8, idx=7.
+* Generating the direct rotation matrices for p=8, idx=8.
+* Direct rotation matrices for p=8 were generated/read from file.
+* Generating the direct Stokes matrix for p=8.
+* Generating the direct Stokes integration data for p=8.
+* Direct rotation matrices for p=8 were generated/read from file.
+
+ Time for diagonal block and prec rotation: 1.003000e-02* Reading the Traction kernel coefficient matrices for p=8: Failed
+* Generating the Traction kernel coefficient matrices for p=8
+* Reading the Legendre Transform matrix for p=12: Failed
+* Generating the Legendre Transform matrix for p=12
+* Stored generated LT matrices for p=12
+* Reading the differentiation matrices for p=12: Failed
+* Generating the differentiation matrices for p=12:
+* Direct differentiation via SHT for p=12 and (du,dv)=(1,0).
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=12 and (du,dv)=(0,1).
+* Reading the inverse Legendre Transform matrix for p=12: Failed
+* Generating the inverse Legendre Transform matrix for p=12
+* Stored generated ILT matrices for p=12
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=12 and (du,dv)=(2,0).
+* Direct differentiation Successful
+* Reading filtering matrix for p=12 to q=12: Failed
+* Generating the filtering matrix for p=12 to q=12.
+* Stored filter matrix for p=12
+* Stored generated Traction coefficient matrices for p=8
+
+ Time for kernel eval update: 5.465062e+00
+-------------------------------------------------
+ Initial (potential) Collisions: 
+  Columns 1 through 13
+
+     1     1     2     2     2     5     9    10    11    12    12    13    13
+     2    10     3     5    11    14    18    11    14    15    21    14    22
+
+  Columns 14 through 26
+
+    14    14    14    16    16    17    19    21    22    22    23    23    24
+    15    17    23    17    25    26    22    24    23    25    24    26    27
+
+  Columns 27 through 28
+
+    25    26
+    26    27
+
+-------------------------------------------------
+
+ ---------------------------------------------------------- 
+
+ (1) Explicit euler step 
+
+ ============================
+ || Fluid Solve at time 0.00 
+ans =
+
+   144   144
+
+
+ Janus Amph S+D BIE solve error = 7.680451e-04, 7.649640e-07
+ Forces and Torques on Amphiphillic Janus particles 
+  Columns 1 through 7
+
+    0.6086    0.0881    0.5598   -0.0122    0.1591    0.0065   -0.5370
+    0.5626   -0.0144   -0.4419    0.0786    0.1281   -0.0968    0.5664
+    0.5852   -0.0209    0.5622    0.0558   -1.9114    0.1641    0.5619
+    0.0068   -0.0247   -0.0497   -0.0118   -0.0814   -0.0476    0.0018
+    0.0119    0.0476   -0.0073    0.0245    0.0473    0.0004    0.0149
+   -0.0186    0.0252    0.0426   -0.0247   -0.0001    0.0011   -0.0131
+
+  Columns 8 through 14
+
+   -0.1244   -0.5922    0.1088   -2.1495    0.0061    0.1381    0.2083
+    0.0095   -0.5674    0.0599    0.1784   -0.1239   -1.8561    0.0307
+    0.0888    0.5603    0.0505    0.2142   -0.1495    0.0948    0.0991
+   -0.0014   -0.0027   -0.0381   -0.0004   -0.1631    0.0858   -0.0247
+   -0.0040   -0.0104    0.0382    0.0159   -0.1568   -0.0003    0.0064
+   -0.0013   -0.0133   -0.0242    0.0212   -0.0742   -0.0505    0.0183
+
+  Columns 15 through 21
+
+    0.1247   -0.1119    1.0444   -0.1449    0.5108    0.1293    0.6401
+    0.8266   -0.0869    0.1553   -0.0885    0.5486   -0.0048   -0.7018
+    0.0184   -0.1455    0.0290    0.0117   -0.5640   -0.0485   -0.5511
+   -0.0943    0.1346    0.0012   -0.0102   -0.0086    0.0127   -0.0646
+   -0.0010    0.1373    0.0968    0.0106    0.0172   -0.0632   -0.0421
+   -0.0270    0.1041    0.0277   -0.0293    0.0086    0.0122   -0.0216
+
+  Columns 22 through 27
+
+   -0.3156   -0.0530    0.0458   -0.4520   -0.0350   -0.5426
+   -0.0463    0.0684   -0.0359    0.7317    0.0619   -0.5172
+   -0.0037    0.9329   -0.1286   -0.6532   -0.0749   -0.5570
+   -0.0424    0.0425    0.0499    0.0318   -0.0442    0.0148
+   -0.1807   -0.1827    0.0330   -0.0483   -0.0186   -0.0057
+   -0.1778    0.0017   -0.0338   -0.0807    0.0444   -0.0091
+
+
+ Time to compute incoming force: 4.780976e+00 Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 24 workers.
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Legendre Transform matrix for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the Traction kernel coefficient matrices for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the differentiation matrices for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading filtering matrix for p=8 to q=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+* Reading the inverse Legendre Transform matrix for p=8: Successful
+
+ Time for to apply B = (L - TD)[sigma]: 2.887892e+01
+ gmres 1 iters=21, res=3.172e-07 
+
+ Time for solve TD[mu] = B: 2.851384e+01
+ Time for apply (of S) to compute U: 4.877930e-01
+ Time to compute V and W: 2.011000e-03
+ Rigid body velocity error: 1.420635e-02
+-------------------------------------------------
+ Computing contact force at collision sites: 
+  Columns 1 through 13
+
+     1     1     2     2     2     5     9    10    11    12    12    13    13
+     2    10     3     5    11    14    18    11    14    15    21    14    22
+
+  Columns 14 through 26
+
+    14    14    14    16    16    17    19    21    22    22    23    23    24
+    15    17    23    17    25    26    22    24    23    25    24    26    27
+
+  Columns 27 through 28
+
+    25    26
+    26    27
+
+-------------------------------------------------
+* Reading the Legendre Transform matrix for p=4: Failed
+* Generating the Legendre Transform matrix for p=4
+* Stored generated LT matrices for p=4
+* Reading the differentiation matrices for p=4: Failed
+* Generating the differentiation matrices for p=4:
+* Direct differentiation via SHT for p=4 and (du,dv)=(1,0).
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=4 and (du,dv)=(0,1).
+* Reading the inverse Legendre Transform matrix for p=4: Failed
+* Generating the inverse Legendre Transform matrix for p=4
+* Stored generated ILT matrices for p=4
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=4 and (du,dv)=(2,0).
+* Direct differentiation Successful
+* Reading filtering matrix for p=4 to q=4: Failed
+* Generating the filtering matrix for p=4 to q=4.
+* Stored filter matrix for p=4
+* Reading the Traction kernel coefficient matrices for p=4: Failed
+* Generating the Traction kernel coefficient matrices for p=4
+* Reading the Legendre Transform matrix for p=6: Failed
+* Generating the Legendre Transform matrix for p=6
+* Stored generated LT matrices for p=6
+* Reading the differentiation matrices for p=6: Failed
+* Generating the differentiation matrices for p=6:
+* Direct differentiation via SHT for p=6 and (du,dv)=(1,0).
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=6 and (du,dv)=(0,1).
+* Reading the inverse Legendre Transform matrix for p=6: Failed
+* Generating the inverse Legendre Transform matrix for p=6
+* Stored generated ILT matrices for p=6
+* Direct differentiation Successful
+* Direct differentiation via SHT for p=6 and (du,dv)=(2,0).
+* Direct differentiation Successful
+* Reading filtering matrix for p=6 to q=6: Failed
+* Generating the filtering matrix for p=6 to q=6.
+* Stored filter matrix for p=6
+* Stored generated Traction coefficient matrices for p=4
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+* Reading the Legendre Transform matrix for p=4: Successful
+* Reading the Traction kernel coefficient matrices for p=4: Successful
+* Reading the differentiation matrices for p=4: Successful
+* Reading filtering matrix for p=4 to q=4: Successful
+* Reading the inverse Legendre Transform matrix for p=4: Successful
+
+ gmres 1 iters=0, res=0 
+-- Ahat[x] MVP time 0.306 sec 
+
+ gmres 1 iters=0, res=0 
+-- A[x] MVP time 1.25 sec 
+
+ gmres 1 iters=12, res=8.426e-07 
+-- Ahat[x] MVP time 2.92 sec 
+
+ gmres 1 iters=6, res=6.152e-07 
+-- Ahat[x] MVP time 2.85 sec 
+
+ gmres 1 iters=12, res=9.803e-07 
+-- Ahat[x] MVP time 2.96 sec 
+
+ gmres 1 iters=18, res=5.868e-07 
+-- Ahat[x] MVP time 3.22 sec 
+
+ gmres 1 iters=12, res=6.696e-07 
+-- Ahat[x] MVP time 3.27 sec 
+
+ gmres 1 iters=12, res=7.185e-07 
+-- Ahat[x] MVP time 3.09 sec 
+
+ gmres 1 iters=18, res=5.402e-07 
+-- Ahat[x] MVP time 2.99 sec 
+
+ gmres 1 iters=6, res=8.7e-07 
+-- Ahat[x] MVP time 3.42 sec 
+
+ gmres 1 iters=24, res=9.456e-07 
+-- A[x] MVP time 25.9 sec 
+
+ gmres 1 iters=18, res=8.654e-07 
+-- Ahat[x] MVP time 3.05 sec 
+
+ gmres 1 iters=12, res=6.873e-07 
+-- Ahat[x] MVP time 3.07 sec 
+
+ gmres 1 iters=18, res=7.208e-07 
+-- Ahat[x] MVP time 2.96 sec 
+
+ gmres 1 iters=18, res=5.905e-07 
+-- Ahat[x] MVP time 3 sec 
+
+ gmres 1 iters=18, res=6.99e-07 
+-- Ahat[x] MVP time 3.04 sec 
+
+ gmres 1 iters=14, res=7.982e-07 
+-- A[x] MVP time 29.6 sec 
+
+ gmres 1 iters=18, res=7.139e-07 
+-- Ahat[x] MVP time 3.38 sec 
+
+ gmres 1 iters=18, res=7.295e-07 
+-- Ahat[x] MVP time 2.91 sec 
+
+ gmres 1 iters=18, res=7.447e-07 
+-- Ahat[x] MVP time 2.8 sec 
+
+ gmres 1 iters=7, res=9.106e-07 
+-- A[x] MVP time 26.6 sec 
+
+ gmres 1 iters=6, res=6.13e-07 
+-- Ahat[x] MVP time 2.64 sec 
+
+ gmres 1 iters=12, res=6.332e-07 
+-- Ahat[x] MVP time 2.76 sec 
+
+ gmres 1 iters=14, res=7.052e-07 
+-- A[x] MVP time 25.8 sec 
+
+ gmres 1 iters=12, res=8.063e-07 
+-- Ahat[x] MVP time 2.5 sec 
+
+ gmres 1 iters=7, res=8.6e-07 
+-- A[x] MVP time 24.1 sec 
+
+bifi LCP solution error = 1.953853e-09, iters = 5 
+
+	SolveTime = 190.906 
+
+ gmres 1 iters=32, res=398.4 
+  Columns 1 through 7
+
+    0.9565  -20.4951   -0.4728         0   23.2742         0         0
+  -44.4390   27.2551   19.5524         0    0.8944         0         0
+  -34.1951  -62.3021   -0.4728         0  -56.2683         0         0
+
+  Columns 8 through 14
+
+         0         0   -0.6405  -92.5299  -14.9257   -0.1608   -7.0976
+         0         0  -24.5740   22.8632    1.1674  -89.7581   63.0087
+         0         0   34.5112   63.1165  -83.3770  -56.8524  -11.5353
+
+  Columns 15 through 21
+
+   15.8757    3.3623   91.6715         0  -44.2817         0  -56.8785
+   21.4822  -76.1655   77.5312         0   -0.2351         0   -1.2841
+   -0.2174 -148.2508  -68.0001         0   -0.2351         0   83.2603
+
+  Columns 22 through 27
+
+ -193.5311  -74.6775   47.1636  234.1181   80.2772    8.9919
+  -86.4037   65.7611   27.5170 -140.8540  111.1505   25.5303
+   60.4724   66.2207    0.6820  144.3726   69.1916   -0.1209
+
+
+ Time for contact force correction: 3.822160e+02
+ Rigid body velocity error after collision correction: 6.507184e-01
+ Time to compute velocities / fluid solve: 4.401035e+02
+ Time to advance centers C(t): 7.000000e-04
+ bisection = 1: dt = 5.0000e-02, mindst = -5.9986e-01, mindstsh = Inf
+ bisection = 2: dt = 2.5000e-02, mindst = -8.9257e-01, mindstsh = Inf
+ bisection = 3: dt = 1.2500e-02, mindst = -4.6871e-01, mindstsh = Inf
+ bisection = 4: dt = 6.2500e-03, mindst = -1.9083e-01, mindstsh = Inf
+ Min pairwise relative distance after collision detection: -0.1908 
+ Time for collision detection: 8.311000e-03
+ Time to advance R(t) and X(t): 1.940300e-02
+ Surface and operator update
+ Time for surface update: 5.323000e-03
+ Time for diagonal block and prec rotation: 1.003000e-03
+ Time for kernel eval update: 3.352745e+00
+ Time to update surface and operators: 3.517971e+00
+ Total computing time for timestep 1 : 4.484359e+02 
+ -------------------------------------------------------------
+
+ dt: 0.01 Saving intermediate results to file
+
+ ---------------------------------------------------------- 
+
+ (1) Explicit euler step 
+
+ ============================
+ || Fluid Solve at time 0.01 
+ans =
+
+   144   144
+
+
+ Janus Amph S+D BIE solve error = 7.675343e-02, 5.817194e-07
+ Forces and Torques on Amphiphillic Janus particles 
+  Columns 1 through 7
+
+    0.6444    0.0622    0.5969    0.0212    0.0342    0.0217   -0.6488
+    0.5626   -0.0206   -0.4374    0.0413    0.1714   -0.0886    0.6360
+    0.5521   -0.0389    0.5414    0.0667   -1.6383    0.1500    0.3483
+    0.0032   -0.0418   -0.0457    0.0076   -0.1029   -0.0489   -0.0915
+    0.0130    0.0376   -0.0006   -0.0141   -0.0167   -0.0087   -0.0952
+   -0.0170    0.0461    0.0490    0.0131    0.0051   -0.0053    0.0075
+
+  Columns 8 through 14
+
+   -0.1319   -0.5430    0.1041   -2.2113   -0.0575    0.2294    0.1464
+    0.0033   -0.5960   -0.0243    0.1545   -0.0875   -2.0199    0.3061
+    0.1071    0.5624    0.0422    0.2878   -0.1871    0.0930   -0.1703
+    0.0222    0.0008   -0.0202    0.0006   -0.1480   -0.0041    0.0945
+   -0.0011    0.0005    0.0169    0.0330   -0.1466    0.0109   -0.0451
+    0.0199    0.0013   -0.0667    0.0472   -0.0878   -0.1978   -0.0529
+
+  Columns 15 through 21
+
+    0.1289    0.0952    0.8929   -0.1418    0.5049    0.1371    0.6000
+    0.8815   -0.2384    0.1497   -0.1173    0.5148   -0.0319   -0.7036
+    0.0368    0.0770    0.0150    0.0139   -0.5363    0.0216   -0.5972
+   -0.0805    0.0297   -0.0047   -0.0312   -0.0010    0.0375   -0.0609
+   -0.0036    0.0104    0.0018    0.0281   -0.0394   -0.1036   -0.0086
+   -0.0661    0.1759   -0.0575   -0.0157   -0.0376    0.0308   -0.0522
+
+  Columns 22 through 27
+
+ -105.8928   -0.0633    0.1418  111.1876   -0.0576   -0.5016
+   -0.4868   -0.0610   -0.0683    1.1357   -0.1230   -0.5310
+  -10.3448    0.6270    0.0691   10.1304   -0.3016   -0.6018
+    0.7778    0.2971   -0.0523    0.2801    0.3274    0.0424
+   -2.5894   -0.2396    0.0855   -1.7968   -0.1019   -0.0193
+   -2.6026   -0.0232   -0.0848   -0.9700   -0.2904   -0.0179
+
+
+ Time to compute incoming force: 5.103651e+00 
+ Time for to apply B = (L - TD)[sigma]: 1.437305e+00
+ gmres 1 iters=180, res=0.03381 
+
+ Time for solve TD[mu] = B: 3.638468e+02
+ Time for apply (of S) to compute U: 7.130330e-01
+ Time to compute V and W: 8.120000e-04
+ Rigid body velocity error: 4.084135e-01
+-------------------------------------------------
+ Computing contact force at collision sites: 
+  Columns 1 through 13
+
+     1     1     2     2     2     5     7     8     9    10    10    11    11
+     2    10     3     5    11    14    16    17    18    11    19    14    20
+
+  Columns 14 through 26
+
+    12    12    13    14    14    16    17    19    21    22    23    24    26
+    15    21    14    17    23    22    18    20    24    25    26    27    27
+
+-------------------------------------------------
+
+ gmres 1 iters=57, res=9.234e-07 
+-- Ahat[x] MVP time 8.56 sec 
+
+ gmres 1 iters=200, res=0.004224 
+-- A[x] MVP time 360 sec 
+
+ gmres 1 iters=42, res=8.241e-07 
+-- Ahat[x] MVP time 9.33 sec 
+
+ gmres 1 iters=60, res=5.865e-07 
+-- Ahat[x] MVP time 6.83 sec 
+
+ gmres 1 iters=54, res=7.92e-07 
+-- Ahat[x] MVP time 8.03 sec 
+
+ gmres 1 iters=68, res=9.786e-07 
+-- Ahat[x] MVP time 8.01 sec 
+
+ gmres 1 iters=63, res=7.966e-07 
+-- Ahat[x] MVP time 9.43 sec 
+
+ gmres 1 iters=48, res=9.138e-07 
+-- Ahat[x] MVP time 7.1 sec 
+
+ gmres 1 iters=36, res=9.811e-07 
+-- Ahat[x] MVP time 7.99 sec 
+
+ gmres 1 iters=57, res=7.025e-07 
+-- Ahat[x] MVP time 8.49 sec 
+
+ gmres 1 iters=96, res=0.1582 
+-- A[x] MVP time 363 sec 
+
+ gmres 1 iters=40, res=9.861e-07 
+-- Ahat[x] MVP time 8.65 sec 
+
+ gmres 1 iters=68, res=9.942e-07 
+-- Ahat[x] MVP time 7.63 sec 
+
+ gmres 1 iters=38, res=9.842e-07 
+-- Ahat[x] MVP time 8.27 sec 
+
+ gmres 1 iters=18, res=8.905e-07 
+-- Ahat[x] MVP time 7.73 sec 
+
+ gmres 1 iters=76, res=7.128e-07 
+-- Ahat[x] MVP time 8.61 sec 
+
+ gmres 1 iters=192, res=0.2331 
+-- A[x] MVP time 363 sec 
+
+ gmres 1 iters=60, res=9.164e-07 
+-- Ahat[x] MVP time 6.96 sec 
+
+ gmres 1 iters=80, res=9.039e-07 
+-- Ahat[x] MVP time 9.04 sec 
+
+ gmres 1 iters=54, res=8.125e-07 
+-- Ahat[x] MVP time 8.1 sec 
+
+ gmres 1 iters=51, res=8.982e-07 
+-- Ahat[x] MVP time 7.87 sec 
+
+ gmres 1 iters=40, res=8.537e-07 
+-- Ahat[x] MVP time 8.89 sec 
+
+ gmres 1 iters=34, res=9.737e-07 
+-- Ahat[x] MVP time 7.47 sec 
+
+ gmres 1 iters=60, res=7.383e-07 
+-- Ahat[x] MVP time 6.82 sec 
+
+ gmres 1 iters=51, res=9.035e-07 
+-- Ahat[x] MVP time 7.66 sec 
+
+ gmres 1 iters=48, res=8.882e-07 
+-- Ahat[x] MVP time 7.25 sec 
+
+ gmres 1 iters=48, res=9.109e-07 
+-- Ahat[x] MVP time 7.18 sec 
+
+ gmres 1 iters=200, res=0.05208 
+-- A[x] MVP time 364 sec 
+[Warning: Convexity of cost function is stagnating] 
+[> In updateQNMemory>geth0 (line 81)
+In updateQNMemory (line 23)
+In get_H_BFGS (line 10)
+In updateHk (line 4)
+In proxQuasiNewton (line 31)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.507882e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.573149e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.605097e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  4.097989e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.867796e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.312232e-19.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.083705e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.171490e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.690755e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.477576e-19.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.254428e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.136859e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.521843e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  5.726252e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.424034e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.144184e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.743590e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.634241e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.651847e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  8.864142e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  7.524995e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.435945e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  3.921188e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.200724e-17.] 
+[> In prox_rankr (line 62)
+In prox (line 19)
+In proxQuasiNewton>@(xtilde)prox(xtilde,opts) (line 34)
+In fwdBwdstep (line 12)
+In proxQuasiNewton>@(t,opts)fwdBwdstep(t,x_km1,Ax_km1,q,prox_k,fg,opts) (line
+35)
+In linesearch/phi_and_psi (line 15)
+In linesearch (line 59)
+In proxQuasiNewton (line 37)
+In bifidelityProxQuasiNewton>solveSubProblem (line 169)
+In bifidelityProxQuasiNewton (line 42)
+In RBS_mobility>LOCAL_Compute_Contact_LCP (line 1054)
+In RBS_mobility>LOCAL_compute_velocities (line 1241)
+In RBS_mobility>LOCAL_euler_step (line 388)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+
+ gmres 1 iters=64, res=8.495e-07 
+-- Ahat[x] MVP time 7.26 sec 
+
+ gmres 1 iters=51, res=8.682e-07 
+-- Ahat[x] MVP time 7.62 sec 
+
+ gmres 1 iters=17, res=9.573e-07 
+-- Ahat[x] MVP time 7.4 sec 
+
+ gmres 1 iters=38, res=9.809e-07 
+-- Ahat[x] MVP time 8.22 sec 
+
+ gmres 1 iters=60, res=9.136e-07 
+-- Ahat[x] MVP time 8.68 sec 
+
+ gmres 1 iters=36, res=9.144e-07 
+-- Ahat[x] MVP time 7.73 sec 
+
+ gmres 1 iters=64, res=7.408e-07 
+-- Ahat[x] MVP time 6.99 sec 
+
+ gmres 1 iters=38, res=8.384e-07 
+-- Ahat[x] MVP time 8.06 sec 
+
+ gmres 1 iters=54, res=8.81e-07 
+-- Ahat[x] MVP time 7.79 sec 
+
+ gmres 1 iters=48, res=8.415e-07 
+-- Ahat[x] MVP time 6.86 sec 
+
+ gmres 1 iters=200, res=0.01644 
+-- A[x] MVP time 367 sec 
+
+ gmres 1 iters=60, res=7.235e-07 
+-- Ahat[x] MVP time 8.91 sec 
+
+ gmres 1 iters=16, res=9.017e-07 
+-- Ahat[x] MVP time 6.93 sec 
+
+ gmres 1 iters=16, res=8.978e-07 
+-- Ahat[x] MVP time 7.14 sec 
+
+ gmres 1 iters=51, res=9.927e-07 
+-- Ahat[x] MVP time 7.46 sec 
+
+ gmres 1 iters=60, res=6.786e-07 
+-- Ahat[x] MVP time 8.78 sec 
+
+ gmres 1 iters=64, res=9.256e-07 
+-- Ahat[x] MVP time 7.02 sec 
+
+ gmres 1 iters=51, res=8.71e-07 
+-- Ahat[x] MVP time 7.29 sec 
+
+ gmres 1 iters=51, res=8.27e-07 
+-- Ahat[x] MVP time 7.15 sec 
+
+ gmres 1 iters=54, res=8.605e-07 
+-- Ahat[x] MVP time 7.56 sec 
+
+ gmres 1 iters=57, res=8.463e-07 
+-- Ahat[x] MVP time 7.92 sec 
+
+ gmres 1 iters=196, res=0.07624 
+-- A[x] MVP time 396 sec 
+
+ gmres 1 iters=57, res=6.217e-07 
+-- Ahat[x] MVP time 8.9 sec 
+
+ gmres 1 iters=51, res=8.977e-07 
+-- Ahat[x] MVP time 8.01 sec 
+
+ gmres 1 iters=51, res=6.301e-07 
+-- Ahat[x] MVP time 8.2 sec 
+
+ gmres 1 iters=40, res=8.442e-07 
+-- Ahat[x] MVP time 9.41 sec 
+
+ gmres 1 iters=48, res=9.124e-07 
+-- Ahat[x] MVP time 7.51 sec 
+
+ gmres 1 iters=38, res=9.907e-07 
+-- Ahat[x] MVP time 8.79 sec 
+
+ gmres 1 iters=57, res=8.673e-07 
+-- Ahat[x] MVP time 8.03 sec 
+
+ gmres 1 iters=45, res=7.708e-07 
+-- Ahat[x] MVP time 6.18 sec 
+
+ gmres 1 iters=34, res=8.904e-07 
+-- Ahat[x] MVP time 6.82 sec 
+
+ gmres 1 iters=54, res=9.728e-07 
+-- Ahat[x] MVP time 7.41 sec 
+
+ gmres 1 iters=200, res=0.08029 
+-- A[x] MVP time 393 sec 
+
+ gmres 1 iters=54, res=7.099e-07 
+-- Ahat[x] MVP time 8.21 sec 
+
+ gmres 1 iters=51, res=9.347e-07 
+-- Ahat[x] MVP time 7.83 sec 
+
+ gmres 1 iters=64, res=8.837e-07 
+-- Ahat[x] MVP time 7.43 sec 
+
+ gmres 1 iters=18, res=9.081e-07 
+-- Ahat[x] MVP time 8.23 sec 
+
+ gmres 1 iters=32, res=9.393e-07 
+-- Ahat[x] MVP time 7.07 sec 
+
+ gmres 1 iters=68, res=7.172e-07 
+-- Ahat[x] MVP time 7.31 sec 
+
+ gmres 1 iters=64, res=8.433e-07 
+-- Ahat[x] MVP time 7.03 sec 
+
+ gmres 1 iters=16, res=9.515e-07 
+-- Ahat[x] MVP time 6.86 sec 
+
+ gmres 1 iters=60, res=8.806e-07 
+-- Ahat[x] MVP time 8.76 sec 
+
+ gmres 1 iters=48, res=9.84e-07 
+-- Ahat[x] MVP time 7.01 sec 
+
+ gmres 1 iters=200, res=0.02442 
+-- A[x] MVP time 367 sec 
+
+bifi LCP solution error = 7.898276e+72, iters = 7 
+
+	SolveTime = 3498.09 
+
+ gmres 1 iters=120, res=0.1123 
+   1.0e+37 *
+
+  Columns 1 through 7
+
+         0    0.1794   -0.2655         0   -0.1340         0         0
+         0   -5.0723    5.1619         0    0.1413         0         0
+         0   -1.3859   -0.1280         0   -2.0114         0         0
+
+  Columns 8 through 14
+
+         0         0    0.1796   -0.5021         0    0.2677   -4.2816
+         0         0   -3.5608    3.7130         0   -3.8536    3.3041
+         0         0    0.0267   -3.3767         0   -0.0229    2.3809
+
+  Columns 15 through 21
+
+         0    1.8522    4.1479         0         0    0.4087         0
+         0    1.1056    0.4082         0         0   -0.2417         0
+         0   -5.2971   -0.3466         0         0    4.8639         0
+
+  Columns 22 through 27
+
+   -3.4530   -5.5474         0    1.6008    5.5474         0
+   -1.0761   -1.5883         0   -0.0295    1.5883         0
+    5.1690   -0.1199         0    0.1281    0.1199         0
+
+
+ Time for contact force correction: 3.870133e+03
+ Rigid body velocity error after collision correction: 9.524082e-02
+ Time to compute velocities / fluid solve: 4.236135e+03
+ Time to advance centers C(t): 9.500000e-05
+ Min pairwise relative distance: 8375.6489
+ Time for collision detection: 1.857000e-03
+ Time to advance R(t) and X(t): 2.053000e-03
+ Surface and operator update
+ Time for surface update: 2.383000e-03
+ Time for diagonal block and prec rotation: 5.850000e-04
+ Time for kernel eval update: 1.522093e+00
+ Time to update surface and operators: 1.697459e+00
+ Total computing time for timestep 2 : 4.242942e+03 
+ -------------------------------------------------------------
+
+ dt: 0.10 Saving intermediate results to file
+
+ ---------------------------------------------------------- 
+
+ (1) Explicit euler step 
+
+ ============================
+ || Fluid Solve at time 0.11 
+ans =
+
+   144   144
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be
+inaccurate. RCOND = NaN.] 
+[> In gmres (line 531)
+In RBS_mobility>LOCAL_get_incoming_Fc (line 634)
+In RBS_mobility>LOCAL_euler_step (line 383)
+In RBS_mobility (line 215)
+In Test_ModLap_Mobility_Amphi (line 245)
+] 
+
+ Janus Amph S+D BIE solve error = NaN, NaN
+ Forces and Torques on Amphiphillic Janus particles 
+  Columns 1 through 13
+
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+
+  Columns 14 through 26
+
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+
+  Column 27
+
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+   NaN
+
+
+ Time to compute incoming force: 1.951646e+01 
+ Time for to apply B = (L - TD)[sigma]: 4.310090e-01
+ gmres 1 iters=0, res=NaN 
+
+ Time for solve TD[mu] = B: 4.269050e-01
+ Time for apply (of S) to compute U: 2.612090e-01
+ Time to compute V and W: 4.280000e-04
+ Rigid body velocity error: NaN
+ Time to compute velocities / fluid solve: 1.121887e+00
+ Time to advance centers C(t): 1.100000e-04
+ Min pairwise relative distance: NaN
+ Time for collision detection: 6.800000e-04
+ Time to advance R(t) and X(t): 9.530000e-04
+ Surface and operator update
+ Time for surface update: 2.406000e-03
+ Time for diagonal block and prec rotation: 5.550000e-04>> Parallel pool using the 'Processes' profile is shutting down.
+==
+
+==
+||
+|| Execution of slurm batch script complete.
+||
+==

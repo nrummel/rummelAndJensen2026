@@ -1,0 +1,15 @@
+expr: missing operand
+Try 'expr --help' for more information.
+mkdir: cannot create directory ‘/home/niru8088/.MathWorks’: Not a directory
+{Error using save
+Unable to write to file
+'/projects/niru8088/Spheroidal3D-collisions/Janus_3D_code/resultsForRecord/amphi.lattice.n_5.p_8.cDist_3.lcpSlvr_bifi.polyDisperseRatio_0.2verification.pLo_4.mat'
+because it appears to be corrupt.
+
+Error in RBS_mobility (line 342)
+    save(saveFile,'-v7.3','tt','Xt','Mt','Ct','FT','sigma','mu','U','VW','psi_Lap','Energy');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in Test_ModLap_Mobility_Amphi (line 245)
+RBS_mobility(fname,Fparams);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
